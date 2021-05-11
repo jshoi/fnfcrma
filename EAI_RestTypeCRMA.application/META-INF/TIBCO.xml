@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <packaging:packageUnit xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:packaging="http://schemas.tibco.com/tra/model/core/PackagingModel" xmlns:property="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <packaging:description>최초배포</packaging:description>
+  <packaging:description>[CRMA] 2,3 Request 스키마 수정, 4 소스, 스키마 수정</packaging:description>
   <packaging:properties>
     <packaging:property>
       <packaging:name>//EAI_RestTypeCRMA//BW.DEPLOYMENTUNIT.TYPE</packaging:name>
