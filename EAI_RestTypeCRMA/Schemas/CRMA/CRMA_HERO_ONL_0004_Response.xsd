@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/CRMA_HERO_ONL_0004_Response" xmlns:tns="http://www.example.org/CRMA_HERO_ONL_0004_Response" elementFormDefault="qualified">
+	<element name="element">
+		<complexType>
+			<sequence>
+				<element name="code" type="decimal" minOccurs="1" maxOccurs="1" nillable="true"></element>
+				<element name="message" type="string" minOccurs="1" maxOccurs="1" nillable="true"></element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

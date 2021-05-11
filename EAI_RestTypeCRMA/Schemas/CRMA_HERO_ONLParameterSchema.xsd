@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:source="bw.rest" xmlns:tns="http://xmlns.example.com/CRMA_HERO_ONL/parameters" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://xmlns.example.com/CRMA_HERO_ONL/parameters">
+  <xs:element name="crma-CremaMileageAddPostForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="user_code" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="1" name="amount" type="xs:integer"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="review_id" type="xs:integer"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="product_code" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="order_code" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="sub_order_code" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="1" name="message" type="xs:string"/>
+                <xs:element maxOccurs="1" minOccurs="0" name="created_at" type="xs:dateTime"/>
+            </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
