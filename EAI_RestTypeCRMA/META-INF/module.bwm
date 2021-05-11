@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:parameters="http://xmlns.example.com/CRMA_HERO_ONL/parameters" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_VqC_IGXqEeuhFpGsQLsBaA" targetNamespace="http://tns.tibco.com/bw/composite/EAI_RestTypeCRMA" name="EAI_RestTypeCRMA" compositeext:version="1.0.0" compositeext:description="[CRMA] Response 수정" compositeext:formatVersion="2">
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:parameters="http://xmlns.example.com/CRMA_HERO_ONL/parameters" xmlns:property="http://ns.tibco.com/bw/property" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_VqC_IGXqEeuhFpGsQLsBaA" targetNamespace="http://tns.tibco.com/bw/composite/EAI_RestTypeCRMA" name="EAI_RestTypeCRMA" compositeext:version="1.0.0" compositeext:description="[CRMA] 2,3 Request 스키마 수정, 4 소스, 스키마 수정" compositeext:formatVersion="2">
   <sca:service xmi:id="_r9Z90nGuEeupe-CL32Tk0Q" name="crma-CremaOfflineOrderInfo" promote="ComponentCRMA_HERO_ONL/crma-CremaOfflineOrderInfo">
     <sca:interface.wsdl xmi:id="_r9Z91nGuEeupe-CL32Tk0Q" interface="http://xmlns.example.com/20210218142601PLT#wsdl.interface(CremaOfflineOrderInfo)" scaext:wsdlLocation="../Processes/com/fnf/eai/crma/hero/db/CRMA_HERO_ONL.bwp"/>
-    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_r9Z913GuEeupe-CL32Tk0Q" name="RestService53" path="/CremaOfflineOrderInfo" docBasePath="http://localhost:7777/EAI_RestTypeCRMA" docResourcePath="CRMA_HERO_ONL" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.crma.hero.db.CRMA_HERO_ONL-CRMA_HERO_ONL.json" scaext:policySetLocations="BWRestHttpServiceBinding">
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_r9Z913GuEeupe-CL32Tk0Q" name="RestService53" path="/crma/CremaOfflineOrderInfo" docBasePath="http://localhost:7777/EAI_RestTypeCRMA" docResourcePath="CRMA_HERO_ONL" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.crma.hero.db.CRMA_HERO_ONL-CRMA_HERO_ONL.json" scaext:policySetLocations="BWRestHttpServiceBinding">
       <operation xmi:id="_r967MHGuEeupe-CL32Tk0Q" operationName="post" nickname="post-CremaOfflineOrderInfo" httpMethod="POST" notes="postCRMA_HERO_ONL" responseStyle="element" outputPartName="item">
         <clientFormat>json</clientFormat>
         <clientRequestFormat>json</clientRequestFormat>
       </operation>
-      <parameters xmi:id="_sAIhsHGuEeupe-CL32Tk0Q"/>
       <advancedConfig xmi:id="_r9Z92HGuEeupe-CL32Tk0Q" blockingQueueSize="2147483647"/>
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_r967MXGuEeupe-CL32Tk0Q" bindingName="RestService53"/>
@@ -22,6 +21,28 @@
       <advancedConfig xmi:id="_u96hcXGuEeupe-CL32Tk0Q" blockingQueueSize="2147483647"/>
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_u-ZCkXGuEeupe-CL32Tk0Q" bindingName="RestService54"/>
+  </sca:service>
+  <sca:service xmi:id="_uBZ0ArInEeuJv7UoI3P8dA" name="crma-CremaMileageAdd" promote="ComponentCRMA_HERO_ONL/crma-CremaMileageAdd">
+    <sca:interface.wsdl xmi:id="_uBZ0BrInEeuJv7UoI3P8dA" interface="http://xmlns.example.com/20210218142601PLT#wsdl.interface(crma-CremaMileageAdd3)" scaext:wsdlLocation="../Processes/com/fnf/eai/crma/hero/db/CRMA_HERO_ONL.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_uBi98LInEeuJv7UoI3P8dA" name="RestService" path="/crma/CremaMileageAdd" docBasePath="http://localhost:7777/EAI_RestTypeCRMA" docResourcePath="CRMA_HERO_ONL" basePath="/" connector="com.fnf.eai.resources.http.server.eai.HTTPConnectorResource" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.fnf.eai.crma.hero.db.CRMA_HERO_ONL-CRMA_HERO_ONL.json">
+      <operation xmi:id="_uBsu8LInEeuJv7UoI3P8dA" operationName="post" nickname="post-crma-CremaMileageAdd" httpMethod="POST" notes="postCRMA_HERO_ONL" clientRequestType="application/x-www-form-urlencoded" responseStyle="element" outputPartName="item">
+        <parameters xmi:id="_4TMz8LInEeuJv7UoI3P8dA">
+          <parameterMapping xmi:id="_4TMz8bInEeuJv7UoI3P8dA" parameterName="user_code" parameterType="formData" dataType="string" required="true"/>
+          <parameterMapping xmi:id="_4iGLkLInEeuJv7UoI3P8dA" parameterName="amount" parameterType="formData" dataType="integer#int32" required="true"/>
+          <parameterMapping xmi:id="_4wInkLInEeuJv7UoI3P8dA" parameterName="review_id" parameterType="formData" dataType="integer#int32"/>
+          <parameterMapping xmi:id="_49MzMLInEeuJv7UoI3P8dA" parameterName="product_code" parameterType="formData" dataType="string"/>
+          <parameterMapping xmi:id="_5JTVgLInEeuJv7UoI3P8dA" parameterName="order_code" parameterType="formData" dataType="string"/>
+          <parameterMapping xmi:id="_5ZYY4LInEeuJv7UoI3P8dA" parameterName="sub_order_code" parameterType="formData" dataType="string"/>
+          <parameterMapping xmi:id="_6XwFoLInEeuJv7UoI3P8dA" parameterName="message" parameterType="formData" dataType="string" required="true"/>
+          <parameterMapping xmi:id="_6mqEULInEeuJv7UoI3P8dA" parameterName="created_at" parameterType="formData" dataType="string#date-time"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>FORM</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_uB2f97InEeuJv7UoI3P8dA"/>
+      <advancedConfig xmi:id="_uBi98bInEeuJv7UoI3P8dA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_uBsu8bInEeuJv7UoI3P8dA" bindingName="RestService"/>
   </sca:service>
   <sca:property xmi:id="_VyyrcGXqEeuhFpGsQLsBaA" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_Vy2V0GXqEeuhFpGsQLsBaA" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
@@ -56,6 +77,9 @@
     </sca:service>
     <sca:service xmi:id="_u95TUHGuEeupe-CL32Tk0Q" name="crma-CremaOfflineOrderDetail">
       <sca:interface.wsdl xmi:id="_u95TUXGuEeupe-CL32Tk0Q" interface="http://xmlns.example.com/20210218142601PLT#wsdl.interface(CremaOfflineOrderDetail)"/>
+    </sca:service>
+    <sca:service xmi:id="_uBZ0ALInEeuJv7UoI3P8dA" name="crma-CremaMileageAdd">
+      <sca:interface.wsdl xmi:id="_uBZ0AbInEeuJv7UoI3P8dA" interface="http://xmlns.example.com/20210218142601PLT#wsdl.interface(crma-CremaMileageAdd3)"/>
     </sca:service>
   </sca:component>
 </sca:composite>

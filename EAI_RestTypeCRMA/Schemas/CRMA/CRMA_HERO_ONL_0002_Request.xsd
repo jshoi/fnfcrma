@@ -3,8 +3,14 @@
 	<element name="element">
 		<complexType>
 			<sequence>
+				<element name="REQUEST">
+					<complexType>
+						<sequence>
 							<element name="V_BRAND" type="string" minOccurs="1" maxOccurs="1"></element>
 							<element name="V_SALEDATE" type="string" minOccurs="1" maxOccurs="1"></element>
+						</sequence>
+					</complexType>
+				</element>
 			</sequence>
 		</complexType>
 	</element>

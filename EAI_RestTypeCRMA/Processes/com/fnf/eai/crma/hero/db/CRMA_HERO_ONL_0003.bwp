@@ -1252,22 +1252,7 @@
             <bendpoints points="[25, 0, -62, 0]$[63, 0, -24, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
-    <tibex:NamespaceRegistry enabled="true">
-        <tibex:namespaceItem
-            namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+5a711932-cbe9-40ec-8612-559ad7126edc+input" prefix="tns11"/>
-        <tibex:namespaceItem
-            namespace="http://www.example.org/CRMA_HERO_ONL_0003_Request" prefix="tns1"/>
-        <tibex:namespaceItem
-            namespace="http://www.example.org/CRMA_HERO_ONL_0003_Response" prefix="tns2"/>
-        <tibex:namespaceItem
-            namespace="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
-        <tibex:namespaceItem
-            namespace="http://www.example.org/ErrSchema" prefix="tns4"/>
-        <tibex:namespaceItem
-            namespace="http://www.example.com/namespaces/tns/1610583409932" prefix="tns6"/>
-        <tibex:namespaceItem
-            namespace="http://www.example.org/ReqSchema" prefix="tns8"/>
-    </tibex:NamespaceRegistry>
+    <tibex:NamespaceRegistry enabled="true"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.com/namespaces/tns/1610583409932"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.example.org/ReqSchema"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
@@ -1465,7 +1450,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.example.org/CRMA_HERO_ONL_0003_Request&quot; xmlns:tns11=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+5a711932-cbe9-40ec-8612-559ad7126edc+input&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;Call_Function-input&quot; match=&quot;/&quot;>&lt;tns11:jdbcQueryActivityInput>&lt;V_BRAND>&lt;xsl:value-of select=&quot;$ParseJSON/tns1:V_BRAND&quot;/>&lt;/V_BRAND>&lt;V_SALEDATE>&lt;xsl:value-of select=&quot;$ParseJSON/tns1:V_SALEDATE&quot;/>&lt;/V_SALEDATE>&lt;/tns11:jdbcQueryActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns1=&quot;http://www.example.org/CRMA_HERO_ONL_0003_Request&quot; xmlns:tns11=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+5a711932-cbe9-40ec-8612-559ad7126edc+input&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;ParseJSON&quot;/>&lt;xsl:template name=&quot;Call_Function-input&quot; match=&quot;/&quot;>&lt;tns11:jdbcQueryActivityInput>&lt;V_BRAND>&lt;xsl:value-of select=&quot;$ParseJSON/tns1:REQUEST/tns1:V_BRAND&quot;/>&lt;/V_BRAND>&lt;V_SALEDATE>&lt;xsl:value-of select=&quot;$ParseJSON/tns1:REQUEST/tns1:V_SALEDATE&quot;/>&lt;/V_SALEDATE>&lt;/tns11:jdbcQueryActivityInput>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity

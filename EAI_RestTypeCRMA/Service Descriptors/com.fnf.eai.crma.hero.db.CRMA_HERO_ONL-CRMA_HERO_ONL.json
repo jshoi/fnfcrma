@@ -9,7 +9,7 @@
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {
-    "/CremaOfflineOrderInfo" : {
+    "/crma/CremaOfflineOrderInfo" : {
       "post" : {
         "summary" : "postCRMA_HERO_ONL",
         "description" : "postCRMA_HERO_ONL",
@@ -23,6 +23,75 @@
           "schema" : {
             "type" : "string"
           },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    },
+    "/crma/CremaMileageAdd" : {
+      "post" : {
+        "summary" : "postCRMA_HERO_ONL",
+        "description" : "postCRMA_HERO_ONL",
+        "operationId" : "post-crma-CremaMileageAdd",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "order_code",
+          "in" : "formData",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "review_id",
+          "in" : "formData",
+          "description" : "",
+          "type" : "integer",
+          "format" : "int32",
+          "required" : false
+        }, {
+          "name" : "amount",
+          "in" : "formData",
+          "description" : "",
+          "type" : "integer",
+          "format" : "int32",
+          "required" : true
+        }, {
+          "name" : "user_code",
+          "in" : "formData",
+          "description" : "",
+          "type" : "string",
+          "required" : true
+        }, {
+          "name" : "created_at",
+          "in" : "formData",
+          "description" : "",
+          "type" : "string",
+          "format" : "date-time",
+          "required" : false
+        }, {
+          "name" : "product_code",
+          "in" : "formData",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "sub_order_code",
+          "in" : "formData",
+          "description" : "",
+          "type" : "string",
+          "required" : false
+        }, {
+          "name" : "message",
+          "in" : "formData",
+          "description" : "",
+          "type" : "string",
           "required" : true
         } ],
         "responses" : {
