@@ -501,13 +501,13 @@
         </schema>
         <xs:schema elementFormDefault="qualified"
             targetNamespace="http://tns.tibco.com/bw/palette/internal/accumulateoutput+c1eb08d2-438a-412e-83a9-f0b9accb8ff6"
-            xmlns:Q1="http://www.tibco.com/namespaces/tnt/plugins/jdbc+5a711932-cbe9-40ec-8612-559ad7126edc+output"
+            xmlns:Q1="http://www.example.org/CRMA_HERO_ONL_0003_Response"
             xmlns:tns="http://tns.tibco.com/bw/palette/internal/accumulateoutput+c1eb08d2-438a-412e-83a9-f0b9accb8ff6" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-            <xs:import namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+5a711932-cbe9-40ec-8612-559ad7126edc+output"/>
+            <xs:import namespace="http://www.example.org/CRMA_HERO_ONL_0003_Response"/>
             <xs:element name="AccumulatedOutput" type="tns:AccumulatedOutputType"/>
             <xs:complexType name="AccumulatedOutputType">
                 <xs:sequence maxOccurs="1" minOccurs="0">
-                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="Q1:resultSet"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="Q1:datas"/>
                 </xs:sequence>
             </xs:complexType>
         </xs:schema>
@@ -667,7 +667,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.3"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="1181"
+                                    x="1287"
                                     xsi:type="notation:Bounds" y="79"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonRender">
@@ -700,7 +700,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.4"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="1059"
+                                    x="1165"
                                     xsi:type="notation:Bounds" y="79"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonParser">
@@ -799,7 +799,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.7"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="1059"
+                                    x="1165"
                                     xsi:type="notation:Bounds" y="172"/>
                                     </children>
                                     <children type="4002">
@@ -830,7 +830,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.8"/>
-                                    <layoutConstraint x="1286"
+                                    <layoutConstraint x="1392"
                                     xsi:type="notation:Bounds" y="79"/>
                                     </children>
                                     <children type="4018">
@@ -946,7 +946,7 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="204"
+                                    x="236"
                                     xsi:type="notation:Bounds" y="31"/>
                                     </children>
 
@@ -1005,6 +1005,62 @@
                                     x="116"
                                     xsi:type="notation:Bounds" y="31"/>
                                     </children>
+
+                                    <children type="4002 bw.generalactivities.mapper">
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.9/@activity/@activities.1/@activity/@activities.5"/>
+
+                                    <layoutConstraint
+                                    height="40"
+                                    width="40"
+                                    x="337"
+                                    xsi:type="notation:Bounds" y="31"/>
+                                    </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1021,7 +1077,7 @@
 
                                     <layoutConstraint
                                     height="121"
-                                    width="337" xsi:type="notation:Bounds"/>
+                                    width="474" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1034,7 +1090,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.9"/>
                                     <layoutConstraint
                                     height="121"
-                                    width="340"
+                                    width="477"
                                     x="15"
                                     xsi:type="notation:Bounds" y="20"/>
                                     </children>
@@ -1125,7 +1181,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.9"/>
                                     <layoutConstraint
-                                    height="165" width="380"
+                                    height="165" width="517"
                                     x="634"
                                     xsi:type="notation:Bounds" y="28"/>
                                     </children>
@@ -1142,7 +1198,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="269"
-                                    width="1468" xsi:type="notation:Bounds"/>
+                                    width="1525" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1151,7 +1207,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="269" width="1471" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="269" width="1528" xsi:type="notation:Bounds"/>
                         </children>
                         <children type="4022">
                             <children type="3022">
@@ -1347,7 +1403,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="470" width="1471" x="1"
+                    <layoutConstraint height="470" width="1528" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -1356,7 +1412,7 @@
             </children>
             <styles fontName="맑은 고딕" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="522" width="1813" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="522" width="1870" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1516,7 +1572,7 @@
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.2" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1534,6 +1590,17 @@
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.9/@activity/@activities.1/@activity/@links/@children.3"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.9/@activity/@activities.1/@activity/@links/@children.4"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
@@ -1639,6 +1706,8 @@
         <bpws:variable name="MAX_ROW_LONG" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             tibex:propertySource="/DB_INFO/MAX_ROW_LONG" type="xsd:int"/>
+        <bpws:variable element="ns6:datas" name="Mapper-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:datas" name="Mapper" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1835,7 +1904,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.example.org/CRMA_HERO_ONL_0003_Response&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+5a711932-cbe9-40ec-8612-559ad7126edc+output&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Accumulate&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns:element>&lt;tns:RESPONSE_CD>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/tns:RESPONSE_CD>&lt;tns:RESPONSE_MSG>&lt;xsl:value-of select=&quot;'SUCCESS'&quot;/>&lt;/tns:RESPONSE_MSG>&lt;xsl:for-each select=&quot;$Accumulate/tns2:resultSet/Record&quot;>&lt;tns:RESPONSE_DATA>&lt;tns:CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(code)&quot;>&lt;xsl:value-of select=&quot;code&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:CODE>&lt;tns:STATUS>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(status)&quot;>&lt;xsl:value-of select=&quot;status&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:STATUS>&lt;tns:PRICE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(price)&quot;>&lt;xsl:value-of select=&quot;price&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:PRICE>&lt;tns:ORDER_CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(order_code)&quot;>&lt;xsl:value-of select=&quot;order_code&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:ORDER_CODE>&lt;tns:PRODUCT_OPTIONS>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(product_options)&quot;>&lt;xsl:value-of select=&quot;product_options&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:PRODUCT_OPTIONS>&lt;tns:PRODUCT_COUNT>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(product_count)&quot;>&lt;xsl:value-of select=&quot;product_count&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:PRODUCT_COUNT>&lt;tns:PRODUCT_CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(product_code)&quot;>&lt;xsl:value-of select=&quot;product_code&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:PRODUCT_CODE>&lt;tns:DELIVERY_STARTED_AT>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(delivery_started_at)&quot;>&lt;xsl:value-of select=&quot;delivery_started_at&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:DELIVERY_STARTED_AT>&lt;/tns:RESPONSE_DATA>&lt;/xsl:for-each>&lt;/tns:element>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.example.org/CRMA_HERO_ONL_0003_Response&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+5a711932-cbe9-40ec-8612-559ad7126edc+output&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Accumulate&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns:element>&lt;tns:RESPONSE_CD>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/tns:RESPONSE_CD>&lt;tns:RESPONSE_MSG>&lt;xsl:value-of select=&quot;'SUCCESS'&quot;/>&lt;/tns:RESPONSE_MSG>&lt;xsl:copy-of select=&quot;$Accumulate/tns:datas/tns:RESPONSE_DATA&quot;/>&lt;/tns:element>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1970,7 +2039,8 @@
                     </tibex:config>
                 </tibex:activityExtension>
             </bpws:extensionActivity>
-            <bpws:scope name="Repeat" tibex:group="repeatUntil" tibex:xpdlId="b2d992e0-ad8d-48fd-82cf-3aa58f6fc701">
+            <bpws:scope name="Repeat" tibex:group="repeatUntil"
+                tibex:indexToGlobal="false" tibex:xpdlId="b2d992e0-ad8d-48fd-82cf-3aa58f6fc701">
                 <bpws:targets>
                     <bpws:target linkName="LOG_ParseToRepeat"/>
                 </bpws:targets>
@@ -2009,6 +2079,7 @@
                                     name="GroupStartToCall_Function" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="LOG_QUERYToAccumulate" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="AssignToLOG_QUERY" tibex:linkType="SUCCESS"/>
+                                <bpws:link name="MapperToAccumulate" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="GroupStart"
                                 tibex:group="groupStart" tibex:xpdlId="c251c736-cd5d-4fc3-8a2b-a61f4d06f952">
@@ -2023,7 +2094,7 @@
                                     tibex:group="groupEnd"
                                     tibex:xpdlId="c1eb08d2-438a-412e-83a9-f0b9accb8ff6" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="LOG_QUERYToAccumulate"/>
+                                    <bpws:target linkName="MapperToAccumulate"/>
                                     </bpws:targets>
                                     <tibex:config>
                                     <bwext:BWActivity
@@ -2036,7 +2107,7 @@
                                     name="config" xsi:type="activityconfig:EMFProperty">
                                     <type href="http://ns.tibco.com/bw/core/internalactivity#//AccumulateEnd"/>
                                     <value xsi:type="internalactivities:AccumulateEnd">
-                                    <activityNames>Call_Function</activityNames>
+                                    <activityNames>Mapper</activityNames>
                                     </value>
                                     </properties>
                                     </activityConfig>
@@ -2182,6 +2253,42 @@
                                     <type href="http://ns.tibco.com/bw/palette/generalactivities#//BWAssign"/>
                                     <value
                                     processVariable="TxInfo" xsi:type="generalactivities:BWAssign"/>
+                                    </properties>
+                                    </activityConfig>
+                                    </bwext:BWActivity>
+                                    </tibex:config>
+                                </tibex:activityExtension>
+                            </bpws:extensionActivity>
+                            <bpws:extensionActivity>
+                                <tibex:activityExtension
+                                    inputVariable="Mapper-input"
+                                    name="Mapper"
+                                    outputVariable="Mapper"
+                                    tibex:xpdlId="9f5e6bef-cd23-4dcb-9beb-8fddafbf8b43" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                    <bpws:targets>
+                                    <bpws:target linkName="LOG_QUERYToAccumulate"/>
+                                    </bpws:targets>
+                                    <bpws:sources>
+                                    <bpws:source linkName="MapperToAccumulate"/>
+                                    </bpws:sources>
+                                    <tibex:inputBindings>
+                                    <tibex:inputBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns=&quot;http://www.example.org/CRMA_HERO_ONL_0003_Response&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Call_Function&quot;/>&lt;xsl:template name=&quot;Mapper-input&quot; match=&quot;/&quot;>&lt;tns:datas>&lt;xsl:for-each select=&quot;$Call_Function/Record&quot;>&lt;tns:RESPONSE_DATA>&lt;tns:CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(code)&quot;>&lt;xsl:value-of select=&quot;code&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:CODE>&lt;tns:STATUS>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(status)&quot;>&lt;xsl:value-of select=&quot;status&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:STATUS>&lt;tns:PRICE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(price)&quot;>&lt;xsl:value-of select=&quot;price&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:PRICE>&lt;tns:ORDER_CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(order_code)&quot;>&lt;xsl:value-of select=&quot;order_code&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:ORDER_CODE>&lt;tns:PRODUCT_OPTIONS>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(product_options)&quot;>&lt;xsl:value-of select=&quot;product_options&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:PRODUCT_OPTIONS>&lt;tns:PRODUCT_COUNT>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(product_count)&quot;>&lt;xsl:value-of select=&quot;product_count&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:PRODUCT_COUNT>&lt;tns:PRODUCT_CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(product_code)&quot;>&lt;xsl:value-of select=&quot;product_code&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:PRODUCT_CODE>&lt;tns:DELIVERY_STARTED_AT>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(delivery_started_at)&quot;>&lt;xsl:value-of select=&quot;delivery_started_at&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns:DELIVERY_STARTED_AT>&lt;/tns:RESPONSE_DATA>&lt;/xsl:for-each>&lt;/tns:datas>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    </tibex:inputBindings>
+                                    <tibex:config>
+                                    <bwext:BWActivity
+                                    activityTypeID="bw.generalactivities.mapper"
+                                    version="6.0.0.001"
+                                    xmlns:CRMA_HERO_ONL_0003_Response="http://www.example.org/CRMA_HERO_ONL_0003_Response"
+                                    xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
+                                    xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
+                                    xmlns:generalactivities="http://ns.tibco.com/bw/palette/generalactivities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <activityConfig>
+                                    <properties
+                                    name="config" xsi:type="activityconfig:EMFProperty">
+                                    <type href="http://ns.tibco.com/bw/palette/generalactivities#//Mapper"/>
+                                    <value
+                                    inputQName="CRMA_HERO_ONL_0003_Response:datas" xsi:type="generalactivities:Mapper"/>
                                     </properties>
                                     </activityConfig>
                                     </bwext:BWActivity>

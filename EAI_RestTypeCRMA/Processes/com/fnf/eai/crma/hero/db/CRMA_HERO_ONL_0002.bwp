@@ -500,13 +500,13 @@
         </schema>
         <xs:schema elementFormDefault="qualified"
             targetNamespace="http://tns.tibco.com/bw/palette/internal/accumulateoutput+98f82de7-17b1-4f69-ba70-57ed9bc9b1c8"
-            xmlns:Q1="http://www.tibco.com/namespaces/tnt/plugins/jdbc+2c161678-c41b-4c92-8ec9-c87a49dbfcc1+output"
+            xmlns:Q1="http://www.example.org/CRMA_HERO_ONL_0002_Response"
             xmlns:tns="http://tns.tibco.com/bw/palette/internal/accumulateoutput+98f82de7-17b1-4f69-ba70-57ed9bc9b1c8" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-            <xs:import namespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+2c161678-c41b-4c92-8ec9-c87a49dbfcc1+output"/>
+            <xs:import namespace="http://www.example.org/CRMA_HERO_ONL_0002_Response"/>
             <xs:element name="AccumulatedOutput" type="tns:AccumulatedOutputType"/>
             <xs:complexType name="AccumulatedOutputType">
                 <xs:sequence maxOccurs="1" minOccurs="0">
-                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="Q1:resultSet"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" ref="Q1:datas"/>
                 </xs:sequence>
             </xs:complexType>
         </xs:schema>
@@ -666,7 +666,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.3"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="1239"
+                                    x="1327"
                                     xsi:type="notation:Bounds" y="69"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonRender">
@@ -699,7 +699,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.4"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="1125"
+                                    x="1213"
                                     xsi:type="notation:Bounds" y="69"/>
                                     </children>
                                     <children type="4002 bw.restjson.JsonParser">
@@ -798,7 +798,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.7"/>
                                     <layoutConstraint
                                     height="40" width="40"
-                                    x="1125"
+                                    x="1213"
                                     xsi:type="notation:Bounds" y="162"/>
                                     </children>
                                     <children type="4002">
@@ -829,7 +829,7 @@
                                     gradientEndColor="50431"
                                     gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.8"/>
-                                    <layoutConstraint x="1325"
+                                    <layoutConstraint x="1413"
                                     xsi:type="notation:Bounds" y="69"/>
                                     </children>
                                     <children type="4018">
@@ -1004,6 +1004,62 @@
                                     x="132"
                                     xsi:type="notation:Bounds" y="31"/>
                                     </children>
+
+                                    <children type="4002 bw.generalactivities.mapper">
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <children type="4017">
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <layoutConstraint xsi:type="notation:Bounds"/>
+                                    </children>
+
+                                    <styles
+                                    fontName="맑은 고딕"
+                                    lineColor="0" xsi:type="notation:ShapeStyle"/>
+
+                                    <styles
+                                    backgroundColor="16777215"
+                                    gradientEndColor="50431"
+                                    gradientStartColor="16777215" xsi:type="bwnotation:BackgroundStyle"/>
+
+                                    <element href="//0/@process/@activity/@activity/@activities.9/@activity/@activities.1/@activity/@activities.5"/>
+
+                                    <layoutConstraint
+                                    height="40"
+                                    width="40"
+                                    x="337"
+                                    xsi:type="notation:Bounds" y="31"/>
+                                    </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
@@ -1033,7 +1089,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.9"/>
                                     <layoutConstraint
                                     height="121"
-                                    width="372"
+                                    width="491"
                                     x="15"
                                     xsi:type="notation:Bounds" y="20"/>
                                     </children>
@@ -1124,7 +1180,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity/@activities.9"/>
                                     <layoutConstraint
-                                    height="165" width="412"
+                                    height="165" width="531"
                                     x="686"
                                     xsi:type="notation:Bounds" y="13"/>
                                     </children>
@@ -1141,7 +1197,7 @@
                                     <styles xsi:type="bwnotation:ResizingStyle"/>
                                     <element href="//0/@process/@activity/@activity"/>
                                     <layoutConstraint height="259"
-                                    width="1458" xsi:type="notation:Bounds"/>
+                                    width="1546" xsi:type="notation:Bounds"/>
                                 </children>
                                 <styles xsi:type="notation:SortingStyle"/>
                                 <styles xsi:type="notation:FilteringStyle"/>
@@ -1150,7 +1206,7 @@
                             <styles xsi:type="bwnotation:BackgroundStyle"/>
                             <styles xsi:type="bwnotation:ResizingStyle"/>
                             <element href="//0/@process/@activity"/>
-                            <layoutConstraint height="259" width="1461" xsi:type="notation:Bounds"/>
+                            <layoutConstraint height="259" width="1549" xsi:type="notation:Bounds"/>
                         </children>
                         <children type="4022">
                             <children type="3022">
@@ -1346,7 +1402,7 @@
                     <styles xsi:type="bwnotation:BackgroundStyle"/>
                     <styles xsi:type="bwnotation:ResizingStyle"/>
                     <element href="//0/@process/@activity"/>
-                    <layoutConstraint height="460" width="1461" x="1"
+                    <layoutConstraint height="460" width="1549" x="1"
                         xsi:type="notation:Bounds" y="1"/>
                 </children>
                 <styles xsi:type="notation:SortingStyle"/>
@@ -1355,7 +1411,7 @@
             </children>
             <styles fontName="맑은 고딕" lineColor="0" xsi:type="notation:ShapeStyle"/>
             <element href="//0/@process"/>
-            <layoutConstraint height="512" width="1803" xsi:type="notation:Bounds"/>
+            <layoutConstraint height="512" width="1891" xsi:type="notation:Bounds"/>
         </children>
         <styles xsi:type="notation:DiagramStyle"/>
         <element href="//0"/>
@@ -1515,7 +1571,7 @@
         </edges>
         <edges
             source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.0/@children.0/@children.0/@children.0/@children.1"
-            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.2" type="4006">
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3" type="4006">
             <children type="6002">
                 <layoutConstraint xsi:type="notation:Location" y="40"/>
             </children>
@@ -1533,6 +1589,17 @@
             <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
             <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
             <element href="//0/@process/@activity/@activity/@activities.9/@activity/@activities.1/@activity/@links/@children.3"/>
+            <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
+        </edges>
+        <edges
+            source="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.0/@children.0/@children.0/@children.0/@children.3"
+            target="//@children.0/@children.3/@children.0/@children.0/@children.0/@children.0/@children.0/@children.0/@children.9/@children.0/@children.2" type="4006">
+            <children type="6002">
+                <layoutConstraint xsi:type="notation:Location" y="40"/>
+            </children>
+            <styles lineColor="0" xsi:type="notation:ConnectorStyle"/>
+            <styles fontName="맑은 고딕" xsi:type="notation:FontStyle"/>
+            <element href="//0/@process/@activity/@activity/@activities.9/@activity/@activities.1/@activity/@links/@children.4"/>
             <bendpoints points="[0, 0, 0, 0]$[0, 0, 0, 0]" xsi:type="notation:RelativeBendpoints"/>
         </edges>
     </notation:Diagram>
@@ -1638,6 +1705,8 @@
         <bpws:variable name="MAX_ROW_LONG" sca-bpel:hotUpdate="false"
             sca-bpel:privateProperty="true" sca-bpel:property="yes"
             tibex:propertySource="/DB_INFO/MAX_ROW_LONG" type="xsd:int"/>
+        <bpws:variable element="ns6:datas" name="Mapper-input" sca-bpel:internal="true"/>
+        <bpws:variable element="ns6:datas" name="Mapper" sca-bpel:internal="true"/>
     </bpws:variables>
     <bpws:extensions>
         <bpws:extension mustUnderstand="no" namespace="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
@@ -1834,7 +1903,7 @@
                     </bpws:sources>
                     <tibex:inputBindings>
                         <tibex:inputBinding
-                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/CRMA_HERO_ONL_0002_Response&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+2c161678-c41b-4c92-8ec9-c87a49dbfcc1+output&quot; version=&quot;2.0&quot;>&#xa;    &lt;xsl:param name=&quot;Accumulate&quot;/>&#xa;    &lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&#xa;        &lt;tns3:element>&#xa;            &lt;tns3:RESPONSE_CD>&#xa;                &lt;xsl:value-of select=&quot;'200'&quot;/>&#xa;            &lt;/tns3:RESPONSE_CD>&#xa;            &lt;tns3:RESPONSE_MSG>&#xa;                &lt;xsl:value-of select=&quot;'SUCCESS'&quot;/>&#xa;            &lt;/tns3:RESPONSE_MSG>&#xa;            &lt;xsl:for-each select=&quot;$Accumulate/tns2:resultSet/Record&quot;>&#xa;                &lt;tns3:RESPONSE_DATA>&#xa;                    &lt;tns3:USER_CODE>&#xa;                        &lt;xsl:choose>&#xa;                            &lt;xsl:when test=&quot;exists(user_code)&quot;>&#xa;                                &lt;xsl:value-of select=&quot;user_code&quot;/>&#xa;                            &lt;/xsl:when>&#xa;                            &lt;xsl:otherwise>&#xa;                                &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                            &lt;/xsl:otherwise>&#xa;                        &lt;/xsl:choose>&#xa;                    &lt;/tns3:USER_CODE>&#xa;                    &lt;tns3:CODE>&#xa;                        &lt;xsl:choose>&#xa;                            &lt;xsl:when test=&quot;exists(code)&quot;>&#xa;                                &lt;xsl:value-of select=&quot;code&quot;/>&#xa;                            &lt;/xsl:when>&#xa;                            &lt;xsl:otherwise>&#xa;                                &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                            &lt;/xsl:otherwise>&#xa;                        &lt;/xsl:choose>&#xa;                    &lt;/tns3:CODE>&#xa;                    &lt;tns3:USER_PHONE>&#xa;                        &lt;xsl:choose>&#xa;                            &lt;xsl:when test=&quot;exists(user_phone)&quot;>&#xa;                                &lt;xsl:value-of select=&quot;user_phone&quot;/>&#xa;                            &lt;/xsl:when>&#xa;                            &lt;xsl:otherwise>&#xa;                                &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                            &lt;/xsl:otherwise>&#xa;                        &lt;/xsl:choose>&#xa;                    &lt;/tns3:USER_PHONE>&#xa;                    &lt;tns3:CREATED_AT>&#xa;                        &lt;xsl:choose>&#xa;                            &lt;xsl:when test=&quot;exists(created_at)&quot;>&#xa;                                &lt;xsl:value-of select=&quot;created_at&quot;/>&#xa;                            &lt;/xsl:when>&#xa;                            &lt;xsl:otherwise>&#xa;                                &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                            &lt;/xsl:otherwise>&#xa;                        &lt;/xsl:choose>&#xa;                    &lt;/tns3:CREATED_AT>&#xa;                    &lt;tns3:STORE_NAME>&#xa;                        &lt;xsl:choose>&#xa;                            &lt;xsl:when test=&quot;exists(store_name)&quot;>&#xa;                                &lt;xsl:value-of select=&quot;store_name&quot;/>&#xa;                            &lt;/xsl:when>&#xa;                            &lt;xsl:otherwise>&#xa;                                &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                            &lt;/xsl:otherwise>&#xa;                        &lt;/xsl:choose>&#xa;                    &lt;/tns3:STORE_NAME>&#xa;                    &lt;tns3:TOTAL_PRICE>&#xa;                        &lt;xsl:choose>&#xa;                            &lt;xsl:when test=&quot;exists(total_price)&quot;>&#xa;                                &lt;xsl:value-of select=&quot;total_price&quot;/>&#xa;                            &lt;/xsl:when>&#xa;                            &lt;xsl:otherwise>&#xa;                                &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                            &lt;/xsl:otherwise>&#xa;                        &lt;/xsl:choose>&#xa;                    &lt;/tns3:TOTAL_PRICE>&#xa;                    &lt;tns3:USER_NAME>&#xa;                        &lt;xsl:choose>&#xa;                            &lt;xsl:when test=&quot;exists(user_name)&quot;>&#xa;                                &lt;xsl:value-of select=&quot;user_name&quot;/>&#xa;                            &lt;/xsl:when>&#xa;                            &lt;xsl:otherwise>&#xa;                                &lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&#xa;                            &lt;/xsl:otherwise>&#xa;                        &lt;/xsl:choose>&#xa;                    &lt;/tns3:USER_NAME>&#xa;                &lt;/tns3:RESPONSE_DATA>&#xa;            &lt;/xsl:for-each>&#xa;        &lt;/tns3:element>&#xa;    &lt;/xsl:template>&#xa;&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                            expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/CRMA_HERO_ONL_0002_Response&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:tns2=&quot;http://www.tibco.com/namespaces/tnt/plugins/jdbc+2c161678-c41b-4c92-8ec9-c87a49dbfcc1+output&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Accumulate&quot;/>&lt;xsl:template name=&quot;RenderJSON-input&quot; match=&quot;/&quot;>&lt;tns3:element>&lt;tns3:RESPONSE_CD>&lt;xsl:value-of select=&quot;'200'&quot;/>&lt;/tns3:RESPONSE_CD>&lt;tns3:RESPONSE_MSG>&lt;xsl:value-of select=&quot;'SUCCESS'&quot;/>&lt;/tns3:RESPONSE_MSG>&lt;xsl:copy-of select=&quot;$Accumulate/tns3:datas/tns3:RESPONSE_DATA&quot;/>&lt;/tns3:element>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
                     </tibex:inputBindings>
                     <tibex:config>
                         <bwext:BWActivity
@@ -1969,7 +2038,8 @@
                     </tibex:config>
                 </tibex:activityExtension>
             </bpws:extensionActivity>
-            <bpws:scope name="Repeat" tibex:group="repeatUntil" tibex:xpdlId="e7ceb5b7-1081-4536-a639-b39075f98564">
+            <bpws:scope name="Repeat" tibex:group="repeatUntil"
+                tibex:indexToGlobal="false" tibex:xpdlId="e7ceb5b7-1081-4536-a639-b39075f98564">
                 <bpws:targets>
                     <bpws:target linkName="LOG_ParseToRepeat"/>
                 </bpws:targets>
@@ -2008,6 +2078,7 @@
                                     name="GroupStartToCall_Function" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="LOG_QUERYToGroupEnd" tibex:linkType="SUCCESS"/>
                                 <bpws:link name="AssignToLOG_QUERY" tibex:linkType="SUCCESS"/>
+                                <bpws:link name="MapperToAccumulate" tibex:linkType="SUCCESS"/>
                             </bpws:links>
                             <bpws:empty name="GroupStart"
                                 tibex:group="groupStart" tibex:xpdlId="e615bdad-e97f-4253-8c8c-b64ed86e6433">
@@ -2022,7 +2093,7 @@
                                     tibex:group="groupEnd"
                                     tibex:xpdlId="98f82de7-17b1-4f69-ba70-57ed9bc9b1c8" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
                                     <bpws:targets>
-                                    <bpws:target linkName="LOG_QUERYToGroupEnd"/>
+                                    <bpws:target linkName="MapperToAccumulate"/>
                                     </bpws:targets>
                                     <tibex:config>
                                     <bwext:BWActivity
@@ -2035,7 +2106,7 @@
                                     name="config" xsi:type="activityconfig:EMFProperty">
                                     <type href="http://ns.tibco.com/bw/core/internalactivity#//AccumulateEnd"/>
                                     <value xsi:type="internalactivities:AccumulateEnd">
-                                    <activityNames>Call_Function</activityNames>
+                                    <activityNames>Mapper</activityNames>
                                     </value>
                                     </properties>
                                     </activityConfig>
@@ -2176,6 +2247,42 @@
                                     <type href="http://ns.tibco.com/bw/palette/generalactivities#//BWAssign"/>
                                     <value
                                     processVariable="TxInfo" xsi:type="generalactivities:BWAssign"/>
+                                    </properties>
+                                    </activityConfig>
+                                    </bwext:BWActivity>
+                                    </tibex:config>
+                                </tibex:activityExtension>
+                            </bpws:extensionActivity>
+                            <bpws:extensionActivity>
+                                <tibex:activityExtension
+                                    inputVariable="Mapper-input"
+                                    name="Mapper"
+                                    outputVariable="Mapper"
+                                    tibex:xpdlId="9df038f1-46a3-4b7c-ab14-2f9374842376" xmlns:tibex="http://www.tibco.com/bpel/2007/extensions">
+                                    <bpws:targets>
+                                    <bpws:target linkName="LOG_QUERYToGroupEnd"/>
+                                    </bpws:targets>
+                                    <bpws:sources>
+                                    <bpws:source linkName="MapperToAccumulate"/>
+                                    </bpws:sources>
+                                    <tibex:inputBindings>
+                                    <tibex:inputBinding
+                                    expression="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xa;&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; xmlns:tns3=&quot;http://www.example.org/CRMA_HERO_ONL_0002_Response&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; version=&quot;2.0&quot;>&lt;xsl:param name=&quot;Call_Function&quot;/>&lt;xsl:template name=&quot;Mapper-input&quot; match=&quot;/&quot;>&lt;tns3:datas>&lt;xsl:for-each select=&quot;$Call_Function/Record&quot;>&lt;tns3:RESPONSE_DATA>&lt;tns3:USER_CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(user_code)&quot;>&lt;xsl:value-of select=&quot;user_code&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns3:USER_CODE>&lt;tns3:CODE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(code)&quot;>&lt;xsl:value-of select=&quot;code&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns3:CODE>&lt;tns3:USER_PHONE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(user_phone)&quot;>&lt;xsl:value-of select=&quot;user_phone&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns3:USER_PHONE>&lt;tns3:CREATED_AT>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(created_at)&quot;>&lt;xsl:value-of select=&quot;created_at&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns3:CREATED_AT>&lt;tns3:STORE_NAME>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(store_name)&quot;>&lt;xsl:value-of select=&quot;store_name&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns3:STORE_NAME>&lt;tns3:TOTAL_PRICE>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(total_price)&quot;>&lt;xsl:value-of select=&quot;total_price&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns3:TOTAL_PRICE>&lt;tns3:USER_NAME>&lt;xsl:choose>&lt;xsl:when test=&quot;exists(user_name)&quot;>&lt;xsl:value-of select=&quot;user_name&quot;/>&lt;/xsl:when>&lt;xsl:otherwise>&lt;xsl:attribute name=&quot;xsi:nil&quot;>true&lt;/xsl:attribute>&lt;/xsl:otherwise>&lt;/xsl:choose>&lt;/tns3:USER_NAME>&lt;/tns3:RESPONSE_DATA>&lt;/xsl:for-each>&lt;/tns3:datas>&lt;/xsl:template>&lt;/xsl:stylesheet>" expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xslt1.0"/>
+                                    </tibex:inputBindings>
+                                    <tibex:config>
+                                    <bwext:BWActivity
+                                    activityTypeID="bw.generalactivities.mapper"
+                                    version="6.0.0.001"
+                                    xmlns:CRMA_HERO_ONL_0002_Response="http://www.example.org/CRMA_HERO_ONL_0002_Response"
+                                    xmlns:activityconfig="http://tns.tibco.com/bw/model/activityconfig"
+                                    xmlns:bwext="http://tns.tibco.com/bw/model/core/bwext"
+                                    xmlns:generalactivities="http://ns.tibco.com/bw/palette/generalactivities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                                    <activityConfig>
+                                    <properties
+                                    name="config" xsi:type="activityconfig:EMFProperty">
+                                    <type href="http://ns.tibco.com/bw/palette/generalactivities#//Mapper"/>
+                                    <value
+                                    inputQName="CRMA_HERO_ONL_0002_Response:datas" xsi:type="generalactivities:Mapper"/>
                                     </properties>
                                     </activityConfig>
                                     </bwext:BWActivity>
