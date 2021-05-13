@@ -120,7 +120,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//EAI_RestTypeCRMA///COMMON/LOG_LEVEL</name>
-			<value>INFO</value>
+			<value>DEBUG</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>

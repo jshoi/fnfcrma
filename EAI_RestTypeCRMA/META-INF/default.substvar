@@ -156,7 +156,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/COMMON/LOG_LEVEL</name>
-			<value>INFO</value>
+			<value>DEBUG</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
