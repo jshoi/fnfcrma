@@ -2039,8 +2039,7 @@
                     </tibex:config>
                 </tibex:activityExtension>
             </bpws:extensionActivity>
-            <bpws:scope name="Repeat" tibex:group="repeatUntil"
-                tibex:indexToGlobal="false" tibex:xpdlId="b2d992e0-ad8d-48fd-82cf-3aa58f6fc701">
+            <bpws:scope name="Repeat" tibex:group="repeatUntil" tibex:xpdlId="b2d992e0-ad8d-48fd-82cf-3aa58f6fc701">
                 <bpws:targets>
                     <bpws:target linkName="LOG_ParseToRepeat"/>
                 </bpws:targets>
