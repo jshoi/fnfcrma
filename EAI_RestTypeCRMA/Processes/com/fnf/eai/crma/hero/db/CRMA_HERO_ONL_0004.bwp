@@ -516,20 +516,6 @@
         <children type="2001">
             <children type="5001"/>
             <children type="3002">
-                <children description="소스 수정 해야함" fillColor="13369343"
-                    fontName="맑은 고딕" lineColor="6737151" lineWidth="1"
-                    transparency="0" type="Note" xsi:type="notation:Shape">
-                    <children type="DiagramName" xsi:type="notation:BasicDecorationNode">
-                        <element xsi:nil="true"/>
-                    </children>
-                    <children type="Description" xsi:type="notation:BasicDecorationNode">
-                        <element xsi:nil="true"/>
-                    </children>
-                    <styles xsi:type="notation:TextStyle"/>
-                    <styles xsi:type="notation:LineTypeStyle"/>
-                    <element xsi:nil="true"/>
-                    <layoutConstraint x="806" xsi:type="notation:Bounds" y="-100"/>
-                </children>
                 <styles xsi:type="notation:SortingStyle"/>
                 <styles xsi:type="notation:FilteringStyle"/>
             </children>
